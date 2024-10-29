@@ -25,7 +25,9 @@ public class Dev {
         }
     }
 
-    public void calculeteTotalXP(){}
+    public double calculeteTotalXP(){
+        return completedContent.stream().mapToDouble(content -> content.calculeteXP()).sum();
+    }
 
     @Override
     public int hashCode() {
