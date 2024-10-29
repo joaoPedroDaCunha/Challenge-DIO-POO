@@ -1,6 +1,7 @@
 package br.com.dio.challenge.domain;
 
 import java.util.LinkedHashSet;
+import java.util.Optional;
 import java.util.Set;
 
 public class Dev {
@@ -13,7 +14,15 @@ public class Dev {
         this.subscribedContent.addAll(bootcamp.getContents());
     }
 
-    public void progress(){}
+    public void progress(){
+        Optional<Content> contentOptional = this.subscribedContent.stream().findFirst();
+        if(!contentOptional.isPresent()){
+            this.completedContent.add(contentOptional.get());
+            this.subscribedContent.remove(contentOptional.get());
+        }else{
+            System.err.println("Você não esta maticulado em nenhum conteudo");
+        }
+    }
 
     public void calculeteTotalXP(){}
 
