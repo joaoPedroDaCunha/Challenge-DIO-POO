@@ -9,7 +9,9 @@ public class Dev {
     private Set<Content> subscribedContent = new LinkedHashSet<>();
     private Set<Content> completedContent = new LinkedHashSet<>();
 
-    public void submitBootCamp(BootCamp bootcamp){}
+    public void submitBootCamp(BootCamp bootcamp){
+        this.subscribedContent.addAll(bootcamp.getContents());
+    }
 
     public void progress(){}
 
