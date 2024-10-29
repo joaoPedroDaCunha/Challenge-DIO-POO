@@ -34,8 +34,7 @@ public class Course extends Content{
 
     @Override
     public double calculeteXP() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calculeteXP'");
+        return XP_PADRAO * getWorkload();
     }
     
     
