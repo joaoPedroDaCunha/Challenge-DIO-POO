@@ -12,6 +12,7 @@ public class Dev {
 
     public void submitBootCamp(BootCamp bootcamp){
         this.subscribedContent.addAll(bootcamp.getContents());
+        bootcamp.getSubmitDevs().add(this);
     }
 
     public void progress(){
