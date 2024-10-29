@@ -17,6 +17,8 @@ public class App {
        Dev devfabio = new Dev();
        devfabio.setName("camila");
        devfabio.submitBootCamp(bootCamp);
-       System.out.println("conteudo instrito:"+ devfabio.getSubscribedContent());;
+       System.out.println("conteudo instrito:"+ devfabio.getSubscribedContent());
+       devfabio.progress();
+       System.out.println("conteudo concluidos:"+ devfabio.getCompletedContent());
     }
 }

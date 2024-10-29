@@ -17,7 +17,7 @@ public class Dev {
 
     public void progress(){
         Optional<Content> contentOptional = this.subscribedContent.stream().findFirst();
-        if(!contentOptional.isPresent()){
+        if(!contentOptional.isEmpty()){
             this.completedContent.add(contentOptional.get());
             this.subscribedContent.remove(contentOptional.get());
         }else{
