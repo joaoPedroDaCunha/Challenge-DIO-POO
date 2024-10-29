@@ -1,4 +1,4 @@
-package br.com.dio.challenge.doman;
+package br.com.dio.challenge.domain;
 
 public abstract class Content {
     
