@@ -1,41 +1,22 @@
 package br.com.dio.challenge.doman;
 
 
-public class Course {
+public class Course extends Content{
 
-    private String title;
-    private String description;
     private int workload;
     
     public Course(String title, String description, int workload) {
-        this.title = title;
-        this.description = description;
+        super(title, description);
         this.workload = workload;
     }
 
     public Course(String title, int workload) {
-        this.title = title;
+        super(title);
         this.workload = workload;
     }
 
     public Course(){
 
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public int getWorkload() {
@@ -48,7 +29,13 @@ public class Course {
 
     @Override
     public String toString() {
-        return "[title=" + title + ", description=" + description + ", workload=" + workload + "]";
+        return "[title=" + super.getTitle() + ", description=" + super.getDiscription() + ", workload=" + workload + "]";
+    }
+
+    @Override
+    public double calculeteXP() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calculeteXP'");
     }
     
     

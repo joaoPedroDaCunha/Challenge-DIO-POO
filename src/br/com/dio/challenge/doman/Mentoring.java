@@ -2,42 +2,25 @@ package br.com.dio.challenge.doman;
 
 import java.time.LocalDate;
 
-public class Mentoring {
+public class Mentoring extends Content{
     
-    private String title;
-    private String discription;
+
     private LocalDate date;
     
     public Mentoring(String title, String discription, LocalDate date) {
-        this.title = title;
-        this.discription = discription;
+        super(title, discription);
         this.date = date;
     }
 
     public Mentoring(String title, LocalDate date) {
-        this.title = title;
+        super(title);
         this.date = date;
     }
 
     public Mentoring(){
-        
+
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDiscription() {
-        return discription;
-    }
-
-    public void setDiscription(String discription) {
-        this.discription = discription;
-    }
 
     public LocalDate getDate() {
         return date;
@@ -49,7 +32,13 @@ public class Mentoring {
 
     @Override
     public String toString() {
-        return "Mentoring [title=" + title + ", discription=" + discription + ", date=" + date + "]";
+        return "Mentoring [title=" + super.getTitle() + ", discription=" + super.getDiscription() + ", date=" + date + "]";
+    }
+
+    @Override
+    public double calculeteXP() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calculeteXP'");
     }
 
     
