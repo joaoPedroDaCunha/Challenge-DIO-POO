@@ -66,6 +66,30 @@ public class Dev {
         return true;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Set<Content> getSubscribedContent() {
+        return subscribedContent;
+    }
+
+    public void setSubscribedContent(Set<Content> subscribedContent) {
+        this.subscribedContent = subscribedContent;
+    }
+
+    public Set<Content> getCompletedContent() {
+        return completedContent;
+    }
+
+    public void setCompletedContent(Set<Content> completedContent) {
+        this.completedContent = completedContent;
+    }
+
     
 
 }
