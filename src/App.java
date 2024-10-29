@@ -19,6 +19,8 @@ public class App {
        devfabio.submitBootCamp(bootCamp);
        System.out.println("conteudo instrito:"+ devfabio.getSubscribedContent());
        devfabio.progress();
+       devfabio.progress();
        System.out.println("conteudo concluidos:"+ devfabio.getCompletedContent());
+       System.out.println("XP: "+devfabio.calculeteTotalXP());
     }
 }
