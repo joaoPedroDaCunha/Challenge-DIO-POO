@@ -19,6 +19,10 @@ public class Mentoring {
         this.date = date;
     }
 
+    public Mentoring(){
+        
+    }
+
     public String getTitle() {
         return title;
     }

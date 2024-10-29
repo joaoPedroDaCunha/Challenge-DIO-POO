@@ -18,6 +18,10 @@ public class Course {
         this.workload = workload;
     }
 
+    public Course(){
+
+    }
+
     public String getTitle() {
         return title;
     }
